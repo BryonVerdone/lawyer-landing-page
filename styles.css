@@ -23,9 +23,32 @@ ul {
   --main-blue: #094b72;
   --background-light: #c3e8f1;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
 /* 
 ==========
 Utility classes 
 ==========
 */
+.section-center {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.hidden {
+  display: none;
+}
+.btn {
+  width: 190px;
+  height: 80px;
+  background: var(--main-blue);
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
