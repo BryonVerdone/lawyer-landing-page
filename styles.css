@@ -16,7 +16,7 @@ ul {
 }
 
 :root {
-  --font-family: 'Poppins', sans-serif;
+  --main-font: 'Poppins', sans-serif;
   --grey-1: #f9f8f9;
   --grey-5: #8b8c8c;
   --grey-6: #4f4f4f;
@@ -51,4 +51,58 @@ Utility classes
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* 
+==========
+Header 
+==========
+*/
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo-img {
+  display: inline;
+  padding-left: 7px;
+}
+.logo-text {
+  font-family: var(--main-font);
+  font-weight: 700px;
+  margin-left: 13px;
+  /* vertical-align: center; */
+}
+/* 
+==========
+Navbar 
+==========
+*/
+.nav-list {
+  display: flex;
+}
+.nav-item {
+  text-transform: uppercase;
+  padding-left: 56px;
+}
+.mobile-btn {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .mobile-btn {
+    display: block;
+  }
 }
