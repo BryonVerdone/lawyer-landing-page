@@ -44,7 +44,7 @@ Utility classes
 }
 .btn {
   width: 190px;
-  height: 80px;
+  height: 48px;
   background: var(--main-blue);
   border-radius: 8px;
   color: white;
@@ -105,4 +105,33 @@ Navbar
   .mobile-btn {
     display: block;
   }
+}
+/* 
+==========
+Hero Section 
+==========
+*/
+.hero-section {
+  background: var(--grey-1);
+}
+
+.hero-heading {
+  color: var(--main-blue);
+  font-size: 56px;
+}
+.hero-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text {
+  font-size: 24px;
+}
+.companies {
+  margin-top: 180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 33px;
+  column-gap: 32px;
 }
