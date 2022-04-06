@@ -36,7 +36,7 @@ Utility classes
 ==========
 */
 .section-center {
-  max-width: 1110px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 .hidden {
@@ -117,21 +117,65 @@ Hero Section
 
 .hero-heading {
   color: var(--main-blue);
-  font-size: 56px;
+  font-size: 3rem;
 }
 .hero-container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+
+  padding: 2rem;
+  gap: 2rem;
+}
+.hero-content {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 .hero-text {
+  font-weight: 500;
+  line-height: 158%;
   font-size: 24px;
+  padding-bottom: 1rem;
+}
+
+.hero-img-container {
+  border-radius: 30px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .hero-img-container {
+    display: none;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+  .hero-heading {
+    font-size: 1.5rem;
+  }
+}
+.hero-img {
+  border-radius: 30px;
+  border-color: transparent;
+  width: 100%;
+  height: auto;
 }
 .companies {
-  margin-top: 180px;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 33px;
   column-gap: 32px;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 425px) {
+  .companies {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .hero-btn {
+    margin: 0 auto;
+  }
 }
