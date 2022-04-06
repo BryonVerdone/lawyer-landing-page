@@ -179,3 +179,33 @@ Hero Section
     margin: 0 auto;
   }
 }
+/* 
+==========
+Why Section 
+==========
+*/
+.why-section {
+  background: var(--background-light);
+}
+.why-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why-content h2 {
+  flex: 50%;
+  font-size: 36px;
+}
+.why-grid {
+  flex: 50%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2rem;
+}
+.why-card {
+  padding: 24px;
+  width: 259px;
+  height: 255px;
+  background: white;
+}
