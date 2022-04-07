@@ -70,7 +70,7 @@ Header
 .logo-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .logo-img {
   display: inline;
@@ -98,6 +98,7 @@ Navbar
 }
 .mobile-btn {
   font-size: 1.5rem;
+  padding-right: 7px;
 }
 @media screen and (max-width: 768px) {
   .navbar {
@@ -246,4 +247,41 @@ Why Section
 .card-text {
   font-size: 14px;
   line-height: 24px;
+}
+/* 
+==========
+Achievement Section 
+==========
+*/
+.achievement-section {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./photos/achievement-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.ach-heading {
+  padding: 58px 0px 8px 0px;
+  text-align: center;
+  flex-shrink: 2;
+  font-size: 48px;
+}
+.ach-cards {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.num {
+  font-size: 48px;
+}
+.ach-card span {
+  display: block;
+}
+.ach-desc {
+  font-size: 18px;
+  font-family: var(--main-font);
+  padding-bottom: 48px;
 }
