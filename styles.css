@@ -191,11 +191,21 @@ Why Section
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 0;
+}
+@media screen and (max-width: 768px) {
+  .why-container {
+    flex-direction: column;
+  }
 }
 .why-content h2 {
   flex: 50%;
   font-size: 36px;
+  /* padding: 2rem; */
 }
+.why-content p {
+}
+/* 1 column at 546px */
 .why-grid {
   flex: 50%;
   display: grid;
@@ -204,8 +214,20 @@ Why Section
   margin: 2rem;
 }
 .why-card {
+  border-radius: 8px;
   padding: 24px;
   width: 259px;
   height: 255px;
   background: white;
+}
+.card-heading {
+  font-family: var(--main-font);
+  font-weight: 700;
+  margin: 18px 0 10px 0;
+  display: block;
+  font-size: 22px;
+}
+.card-text {
+  font-size: 14px;
+  line-height: 24px;
 }
