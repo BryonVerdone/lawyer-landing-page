@@ -306,3 +306,55 @@ Achievement Section
   font-family: var(--main-font);
   padding-bottom: 48px;
 }
+
+/* 
+==========
+Testimonial Section 
+==========
+*/
+.testimonial-section {
+  background: var(--background-light);
+}
+.testimonial-heading {
+  padding-top: 61px;
+  padding-bottom: 51px;
+  font-size: 48px;
+  text-align: center;
+}
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+
+  gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .testimonial-cards {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.testimonial-card {
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 540px;
+  height: 232px;
+  background: white;
+}
+.testimonial-card h3 {
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.testimonial-card p {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 1rem;
+  line-height: 24px;
+}
