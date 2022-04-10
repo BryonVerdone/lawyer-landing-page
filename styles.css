@@ -314,6 +314,7 @@ Testimonial Section
 */
 .testimonial-section {
   background: var(--background-light);
+  padding-bottom: 91px;
 }
 .testimonial-heading {
   padding-top: 61px;
@@ -332,6 +333,9 @@ Testimonial Section
     align-items: center;
     flex-direction: column;
   }
+}
+.col {
+  margin: 0 1rem;
 }
 .testimonial-card {
   flex-shrink: 3;
@@ -367,6 +371,22 @@ Testimonial Section
     font-size: 12px;
   }
 }
-.col {
-  margin: 0 1rem;
+.client {
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-img {
+  padding-right: 16px;
+}
+.client-text {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.client-name {
+  font: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
 }
