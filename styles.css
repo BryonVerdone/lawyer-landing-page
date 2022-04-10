@@ -236,6 +236,7 @@ Why Section
   width: 259px;
   height: 255px;
   background: white;
+  box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
 }
 .card-heading {
   font-family: var(--main-font);
@@ -260,7 +261,7 @@ Achievement Section
   align-items: center;
   background-image: url(./photos/achievement-bg.png);
   background-position: center;
-  background-repeat: no-repeat;
+
   text-align: center;
 }
 .ach-heading {
@@ -273,13 +274,33 @@ Achievement Section
   display: flex;
   justify-content: center;
   gap: 15px;
+  padding-bottom: 55px;
+}
+.mid {
+  border-left: solid 1px #c3e8f1;
+  border-right: solid 1px #c3e8f1;
+}
+@media screen and (max-width: 768px) {
+  .ach-cards {
+    align-items: center;
+    flex-direction: column;
+  }
+  .mid {
+    border: none;
+  }
 }
 .num {
   font-size: 48px;
 }
+.ach-card {
+  width: 255px;
+  /* height: 96px; */
+  /* padding-bottom: 55px; */
+}
 .ach-card span {
   display: block;
 }
+
 .ach-desc {
   font-size: 18px;
   font-family: var(--main-font);
