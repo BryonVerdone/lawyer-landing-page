@@ -390,3 +390,49 @@ Testimonial Section
   font-weight: 700;
   font-size: 18px;
 }
+/* 
+==========
+question Section 
+==========
+*/
+.question-section {
+  background: white;
+}
+.question-heading {
+  width: 100%;
+  font-family: var(--main-font);
+  font-size: 48px;
+  padding-bottom: 15px;
+}
+.question-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question-text {
+  padding-left: 4rem;
+}
+.question-text p {
+  font-family: var(--main-font);
+  max-width: 821px;
+  line-height: 36px;
+  padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .question-img {
+    display: none;
+  }
+  .question-content {
+    justify-content: center;
+  }
+  .question-heading {
+    font-size: 40px;
+  }
+  .question-text {
+    text-align: center;
+    padding: 0;
+  }
+  .question-btn {
+    margin: 0 auto;
+  }
+}
