@@ -402,7 +402,7 @@ question Section
   width: 100%;
   font-family: var(--main-font);
   font-size: 48px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .question-content {
   display: flex;
@@ -418,7 +418,12 @@ question Section
   line-height: 36px;
   padding: 0 1rem 1rem 1rem;
 }
+.img-container {
+  height: 375px;
+}
 .question-img {
+  object-fit: cover;
+  /* width: 100%; */
   height: 100%;
 }
 @media screen and (max-width: 768px) {
