@@ -416,7 +416,7 @@ question Section
   font-family: var(--main-font);
   max-width: 821px;
   line-height: 36px;
-  padding: 0 1rem 1rem 1rem;
+  /* padding: 0 1rem 1rem 1rem; */
 }
 .img-container {
   height: 375px;
@@ -466,22 +466,29 @@ footer Section
   /* flex-wrap: wrap; */
   /* flex-direction: column; */
 }
+@media screen and (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .footer-col {
   font-family: var(--main-font);
   color: white;
   padding: 2rem 0 2rem 0;
   display: flex;
-  /* gap: 32px; */
+  gap: 32px;
   /* flex-wrap: wrap; */
-
   justify-content: center;
 }
 .footer-link-header {
   padding-bottom: 32px;
+  padding-right: 1rem;
 }
 .footer-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .footer-list li {
   padding: 12px 18px 12px 0;
