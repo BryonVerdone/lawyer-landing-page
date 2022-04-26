@@ -466,12 +466,7 @@ footer Section
   /* flex-wrap: wrap; */
   /* flex-direction: column; */
 }
-@media screen and (max-width: 600px) {
-  .footer-content {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
+
 .footer-col {
   font-family: var(--main-font);
   color: white;
@@ -480,6 +475,16 @@ footer Section
   gap: 32px;
   /* flex-wrap: wrap; */
   justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .footer-col {
+    display: none;
+  }
+  .footer-content {
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
 }
 .footer-link-header {
   padding-bottom: 32px;
