@@ -53,19 +53,26 @@ Utility classes
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
-
+.btn:hover {
+  background: #c3e8f1;
+  color: black;
+}
 /* 
 ==========
 Header 
 ==========
 */
 .header {
+  position: relative;
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 3;
 }
 .logo-container {
   display: flex;
@@ -99,6 +106,7 @@ Navbar
 .mobile-btn {
   font-size: 1.5rem;
   padding-right: 7px;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .navbar {
@@ -110,6 +118,45 @@ Navbar
   .mobile-btn {
     display: block;
   }
+}
+/* 
+==========
+Mobile Nav 
+==========
+*/
+.hide {
+  transform: translateX(100%);
+}
+.mobile-nav {
+  background: white;
+  position: fixed;
+  /* opacity: 0.8; */
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  /* border-left: 3px solid var(--primary-color); */
+  transition: all 0.5s ease-in-out;
+}
+.mobile-nav ul {
+  padding-top: 35px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
+}
+.mobile-nav a {
+  text-transform: uppercase;
+  color: var(--white);
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 18px;
+  transition: var(--transition);
+}
+.mobile-nav a:hover {
+  color: var(--main-blue);
 }
 /* 
 ==========
@@ -129,7 +176,6 @@ Hero Section
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   padding: 2rem;
   gap: 2rem;
 }
@@ -463,8 +509,6 @@ footer Section
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* flex-wrap: wrap; */
-  /* flex-direction: column; */
 }
 
 .footer-col {
@@ -473,7 +517,6 @@ footer Section
   padding: 2rem 0 2rem 0;
   display: flex;
   gap: 32px;
-  /* flex-wrap: wrap; */
   justify-content: center;
 }
 @media screen and (max-width: 600px) {
@@ -496,5 +539,6 @@ footer Section
   justify-content: center;
 }
 .footer-list li {
+  color: white;
   padding: 12px 18px 12px 0;
 }

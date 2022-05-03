@@ -15,7 +15,7 @@
       href="./fontawesome-free-5.12.1-web/css/all.min.css"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <title>Lawyer Landing Page</title>
   </head>
   <body>
     <!-- header -->
@@ -26,10 +26,11 @@
       </div>
       <nav class="navbar">
         <ul class="nav-list">
-          <li class="nav-item">contact</li>
-          <li class="nav-item">testimonial</li>
-          <li class="nav-item">about</li>
-          <li class="nav-item">terms</li>
+          <a href="#why-section"><li class="nav-item">about</li></a>
+          <a href="#testimonial-section"
+            ><li class="nav-item">testimonial</li></a
+          >
+          <a href="#question-section"><li class="nav-item">contact</li></a>
         </ul>
       </nav>
       <div class="mobile-container">
@@ -40,8 +41,20 @@
       </div>
     </header>
     <!-- End of header -->
+    <!-- Mobile Nav -->
+    <nav id="mobile-nav" class="mobile-nav hide">
+      <ul class="mobile-nav-list">
+        <a href="#why-section"><li class="mobile-link">about</li></a>
+        <a href="#testimonial-section"
+          ><li class="mobile-link">testimonial</li></a
+        >
+        <a href="#question-section"><li class="mobile-link">contact</li></a>
+      </ul>
+    </nav>
+    <!-- End of Mobile Nav -->
+
     <!-- Hero section -->
-    <section class="hero-section">
+    <section id="hero-section" class="hero-section">
       <div class="hero-container section-center">
         <div class="hero-content">
           <div class="hero-heading">
@@ -66,7 +79,7 @@
     </section>
     <!-- end of Hero section -->
     <!-- Why section -->
-    <section class="why-section">
+    <section id="why-section" class="why-section">
       <div class="why-container section-center">
         <div class="why-content">
           <h2>How do we help?</h2>
@@ -115,7 +128,7 @@
     </section>
     <!-- End of Why section -->
     <!-- Achievement section -->
-    <section class="achievement-section">
+    <section id="achievement-section" class="achievement-section">
       <div class="ach-container">
         <h3 class="ach-heading">Some Count That Matters</h3>
         <div class="ach-desc">
@@ -139,7 +152,7 @@
     </section>
     <!-- End of Achievement section -->
     <!-- Testimonial section -->
-    <section class="testimonial-section">
+    <section id="testimonial-section" class="testimonial-section">
       <h1 class="testimonial-heading">Client Testimonials</h1>
       <div class="testimonial-cards">
         <div class="col">
@@ -182,7 +195,7 @@
     </section>
     <!-- End of Testimonial section -->
     <!-- Questions section -->
-    <section class="question-section">
+    <section id="question-section" class="question-section">
       <div class="question-content">
         <div class="question-text">
           <div class="question-heading">Complex Questions?</div>
@@ -200,7 +213,7 @@
     </section>
     <!-- End of Questions section -->
     <!-- Footer section -->
-    <section class="footer-section">
+    <section id="footer-section" class="footer-section">
       <div class="footer-content">
         <div class="footer-logo">
           <img src="./photos/Logo-white.png" alt="" />
@@ -209,27 +222,27 @@
           <div class="footer-col">
             <ul class="footer-list">
               <h3 class="footer-link-header">Product</h3>
-              <li>Overview</li>
-              <li>Features</li>
-              <li>Tutorials</li>
-              <li>Pricing</li>
-              <li>Releases</li>
+              <a href="#"><li>Overview</li></a>
+              <a href="#"><li>Features</li></a>
+              <a href="#"><li>Tutorials</li></a>
+              <a href="#"><li>Pricing</li></a>
+              <a href="#"><li>Releases</li></a>
             </ul>
             <ul class="footer-list">
               <h3 class="footer-link-header">Company</h3>
-              <li>About</li>
-              <li>Press</li>
-              <li>Careers</li>
-              <li>Contact</li>
-              <li>Partners</li>
+              <a href="#"><li>About</li></a>
+              <a href="#"><li>Press</li></a>
+              <a href="#"><li>Careers</li></a>
+              <a href="#"><li>Contact</li></a>
+              <a href="#"><li>Partners</li></a>
             </ul>
             <ul class="footer-list">
               <h3 class="footer-link-header">Support</h3>
-              <li>Help Center</li>
-              <li>Terms of Service</li>
-              <li>Tutorials</li>
-              <li>Pricing</li>
-              <li>Releases</li>
+              <a href="#"><li>Help Center</li></a>
+              <a href="#"><li>Terms of Service</li></a>
+              <a href="#"><li>Tutorials</li></a>
+              <a href="#"><li>Pricing</li></a>
+              <a href="#"><li>Releases</li></a>
             </ul>
           </div>
         </div>
